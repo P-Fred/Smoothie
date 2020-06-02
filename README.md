@@ -18,11 +18,11 @@ In summary this project proposes 4 different binaries, one for each considered s
 - Binary `mine-afi` scores dependencies with adjusted fraction of information (AFI). See (Nguyen, 2014)
 - Binary `mine-mfi` scores dependencies with a MDL based fraction of information (MFI). See (Suzuki, 2019)
 
-# License
+## License
 
 All software are released under the GNU Public License V3.
 
-# Requirements
+## Requirements
 
 The project supports GNU C++ compiler (g++) under Linux distribution (tested on Ubuntu 18.04).
 Please note the following requirements prior to installation:
@@ -39,7 +39,7 @@ sudo apt install -y cmake
 sudo apt install -y libboost-all-dev
 ```
 
-# Installation 
+## Installation 
 
 After having installed the required packages, compile and install the software as follows.
 
@@ -56,7 +56,7 @@ ls
 ```
 You should find all binaries in the `algorithms` subdirectory.
 
-# Usage
+## Usage
 
 Every program provides help to choose the right command line flags. Some datasets ready-to-be-used are provided in the right JSON format in the `data` subdirectory.
 Here are examples showing for each binary how to mine the top-10 dependencies where the target attribute is the last one:
@@ -71,7 +71,7 @@ cd build/algorithms
 
 Note that applications take as inputs categorical data formatted in JSON. Every data must be a list of pairs of integers. The first integer encodes the feature number and starts at 0. The second integer is the value of the feature. Outputs are displayed in the same JSON format. A single output is a pair of a pattern defined by a list of feature numbers and of a score.
 
-# References
+## References
 
 - Mandros Panagiotis, Mario Boley, et Jilles Vreeken. *Discovering Reliable Approximate Functional Dependencies*. In Proceedings of the 23rd ACM SIGKDD International Conference on  Knowledge Discovery and Data Mining, 355‑63. Halifax, NS, Canada: ACM, 2017.
 - Nguyen, Xuan Vinh, Jeffrey Chan, et James Bailey. *Reconsidering Mutual Information Based Feature Selection: A Statistical Significance View.* In AAAI, 2092--2098, 2014.
