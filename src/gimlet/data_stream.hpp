@@ -63,7 +63,8 @@ namespace gimlet {
     }
     
     void close() {
-        if(is_ && ! std::uncaught_exception())
+        if(is_)
+	  //        if(is_ && ! std::uncaught_exception())
           this->readEnd(*is_);
     }
 
@@ -140,8 +141,8 @@ namespace gimlet {
     }
     
     void close() {
-        if(os_ && ! std::uncaught_exception())
-          this->writeEnd(*os_);
+      if(os_)
+	this->writeEnd(*os_);
     }
 
 

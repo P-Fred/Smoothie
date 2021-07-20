@@ -65,7 +65,7 @@ cd build/algorithms
 
 ./mine-smi --K 10 --target -1 --alpha 1 < ../../data/lymphography.json  # alpha is the Laplace smoothing coefficient
 ./mine-rfi --K 10 --target -1 < ../../data/lymphography.json 
-./mine-afi --K 10 --target -1 --alpha 0.95 < ../../data/lymphography.json # alpha is the significance level. See (Nguyen et al, 2014)
+./mine-afi --K 10 --target -1 --alpha 0.95 < ../../data/lymphography.json 
 ./mine-mfi --K 10 --target -1 < ../../data/lymphography.json 
 ```
 
